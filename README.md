@@ -1,6 +1,6 @@
 # Tests-Intuitive-Care
 
-Teste realizados para o processo seletivo IntuitiveCare.
+Testes realizados para o processo seletivo IntuitiveCare.
 
 ## Teste 1 - WebScraping
 
@@ -10,7 +10,7 @@ Para o desenvolvimento foi utilizado a linguagem [Python](https://www.python.org
 * [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/);
 
 ### Começando
-Primeiramente, abra o terminal no diretorio do teste e instale as dependencias:
+Primeiramente, abra o terminal no diretório do teste e instale as dependências:
 * `$ pip install requests`
 * `$ pip install beautifulsoup4`
 * `$ pip install lxml`
@@ -19,7 +19,7 @@ Primeiramente, abra o terminal no diretorio do teste e instale as dependencias:
 Para rodar a aplicação use o comando:
 `$ python webScp.py`
 
-Logo apos a execução gerará na pasta do teste um arquivo **/.pdf**/
+Logo após a execução gerará na pasta do teste um arquivo**.pdf**
 
 ## Teste 3 - Banco de dados
 
@@ -28,10 +28,10 @@ Para o desenvolvimento foi utilizado a linguagem [Python](https://www.python.org
 * [mysql.connector](https://dev.mysql.com/doc/connector-python/en/);
 
 E também foi utilizado o Banco de Dados Mysql:
-* **./data base/config.py** - Contem a configuração do Banco de Dados, altere para a sua
+* **./data base/config.py** - Contém as configurações do Banco de Dados, altere com as suas:
 
 ### Começando
-Primeiramente, abra o terminal no diretorio do teste e instale as dependencias:
+Primeiramente, abra o terminal no diretório do teste e instale as dependências:
 * `$ pip install mysql-connector-python`
 
 ### Configurando Banco de Dados
