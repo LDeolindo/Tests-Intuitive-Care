@@ -1,14 +1,13 @@
-# Montar uma query analítica que traga a resposta para as seguintes perguntas:
-#   - Quais as 10 operadoras que mais tiveram despesas com "EVENTOS/ SINISTROS CONHECIDOS OU AVISADOS  DE ASSISTÊNCIA A SAÚDE MEDICO HOSPITALAR" no último trimestre?
-#   - Quais as 10 operadoras que mais tiveram despesas com "EVENTOS/ SINISTROS CONHECIDOS OU AVISADOS  DE ASSISTÊNCIA A SAÚDE MEDICO HOSPITALAR" no último ano?
 import datetime
 import mysql.connector
-import tablesDictionary
+# importa as configurações
 import config
+# importa o banco criado
 import createDataBase
 
 dbName = createDataBase.dbName
 
+# tenta fazer a conexão com o banco
 try:
   db = mysql.connector.connect(
     host = config.host,
@@ -19,6 +18,9 @@ try:
 except mysql.connector.Error as err:
   print(err)
 
+# query para: Quais as 10 operadoras que mais tiveram despesas com 
+# "EVENTOS/ SINISTROS CONHECIDOS OU AVISADOS  DE ASSISTÊNCIA A SAÚDE MEDICO HOSPITALAR" 
+# no último trimestre?
 def queryQ4(mycursor):
   try:
     print("Searching : ")
@@ -41,6 +43,9 @@ def queryQ4(mycursor):
     for (i, j) in mycursor:
       print(" {} - {}".format(i, j))
 
+# query para: Quais as 10 operadoras que mais tiveram despesas com 
+# "EVENTOS/ SINISTROS CONHECIDOS OU AVISADOS  DE ASSISTÊNCIA A SAÚDE MEDICO HOSPITALAR" 
+# no último ano?
 def queryPastYear(mycursor):
   try:
     print("Searching : ")

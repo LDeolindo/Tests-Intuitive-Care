@@ -1,3 +1,4 @@
+# cria um lista com as tabelas
 TABLES = {}
 
 TABLES['Relatorio_cadop'] = (

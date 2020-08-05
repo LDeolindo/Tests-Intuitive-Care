@@ -1,10 +1,14 @@
 import mysql.connector
+# importa as tabelas criadas
 import tablesDictionary
+# importa as configurações
 import config
+# importa o banco criado
 import createDataBase
 
 dbName = createDataBase.dbName
 
+# tenta fazer a conexão com o banco
 try:
   db = mysql.connector.connect(
     host = config.host,
@@ -15,6 +19,7 @@ try:
 except mysql.connector.Error as err:
   print(err)
 
+# criar as tabelas que estão no dicionarios de tabelas
 def createTable(mycursor, table, tableName):
   try:
     mycursor.execute(table)
